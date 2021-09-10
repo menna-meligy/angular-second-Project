@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- local refrence in templete -->
+            <input type="text" class="form-control" #serverNamevInput>
+            <button class="btn btn-primary" (click)="onAddServer(serverNamevInput)"> Add server</button>
+            <p> {{serverName}}</p>
+
+            <input type="text" class="form-control" #serverContentInput>
+            <button class="btn btn-primary" (click)="onAddContent(serverContentInput)"> Add Content</button>
+            <!-- <p> {{serverContentProp}}</p> -->
+            <p> {{serverContent}}</p>
+        </div>
+    </div>
+</div>
